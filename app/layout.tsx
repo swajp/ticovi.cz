@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
+import Link from "next/link"
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -28,6 +29,9 @@ export default function RootLayout({
         <html lang="cs">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 {children}
+                <Link href="mailto:mango@ticovi.cz" className="absolute bottom-0 left-0 right-0 text-center text-xs text-black pb-4">
+                    mango@ticovi.cz
+                </Link>
                 <Analytics />
             </body>
         </html>
