@@ -17,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
     title: "Ti co ví 💀 Mango Mango 🥭 - Objev Vituse",
-    description: "Ti, co vědí, se smějí nejvíc! Stránka jen pro ty, co ví. 🤫"
+    description: "Ti, co vědí, se smějí nejvíc! Stránka jen pro ty, co ví. 🤫",
+    metadataBase: new URL("https://ticovi.cz/")
 }
 
 export default function RootLayout({
